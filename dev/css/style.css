@@ -1,0 +1,117 @@
+html {
+	background-image: linear-gradient(#203F3F, #53c9b3);
+	height: 100%;
+}
+body {
+	position: relative;
+	text-align: center;
+	padding-top: 2px;
+	color: #E7F7F5;
+	font-family: 'Oswald' sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	line-height: 1;
+	min-width: 925px;
+}
+
+nav {
+	font-size: 1.5em;
+	display: block;
+}
+
+	nav ul {
+		list-style: none;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+		nav ul li {
+			float: left;
+			width: 16%;
+		}
+
+			nav ul li a {
+				color: #FFFFFF;
+				line-height: 50px;
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: all 0.3s ease-in;  
+			}
+
+				nav ul li a:hover {
+					color: #96A267;
+				}
+
+		nav ul ul{
+			display: none;
+			font-size: 0.7em;
+		}
+
+		nav ul ul li {
+			float: left;
+			width: 100%;
+		}
+
+
+		nav ul li:hover > ul {
+			display: block;
+		}
+
+hr {
+  color: #fff;
+  margin-top: 80px;
+  background-color: #fff;
+  height: 1px;
+  width:100%;
+}			
+
+.main-content {
+	margin-top: 60px;
+}
+
+.title{
+	font-size: 1.5em;
+	letter-spacing: 0.12em;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+.notice{
+	text-transform: uppercase;
+	margin-top: 80px;
+	font-size: 1.5em;
+}
+.countdown-timer {
+	margin-top:  80px;
+}
+.chart {
+	display: inline-block;
+	width: 95px;
+	height: 95px;
+	margin: 0 10px;
+	vertical-align: top;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 22px;
+}
+.chart span {
+	display: block;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+.chart canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+@media (max-width: 450px){
+	.title{
+		font-size: 1.5em;
+		line-height: 1.3em;
+	}
+}
