@@ -5,7 +5,8 @@ html {
 body {
 	position: relative;
 	text-align: center;
-	padding-top: 2px;
+	padding-top: 1px;
+	margin-top: 0px;
 	color: #E7F7F5;
 	font-family: 'Oswald' sans-serif;
 	font-weight: 100;
@@ -15,58 +16,56 @@ body {
 }
 
 nav {
-	font-size: 1.5em;
+	margin-top: 20px;
+	font-size: 1.3em;
 	display: block;
 }
 
-	nav ul {
-		list-style: none;
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-		nav ul li {
-			float: left;
-			width: 16%;
-		}
-
-			nav ul li a {
-				color: #FFFFFF;
-				line-height: 50px;
-				text-transform: uppercase;
-				text-decoration: none;
-				transition: all 0.3s ease-in;  
-			}
-
-				nav ul li a:hover {
-					color: #96A267;
-				}
-
-		nav ul ul{
-			display: none;
-			font-size: 0.7em;
-		}
-
-		nav ul ul li {
-			float: left;
-			width: 100%;
-		}
-
-
-		nav ul li:hover > ul {
-			display: block;
-		}
+	/*Initialize*/
+ul#menu, ul#menu ul.sub-menu {
+    padding:0;
+    margin: 0;
+    text-transform: uppercase;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 16%;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    display:inline-block;
+    width: 100%;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
 
 hr {
   color: #fff;
-  margin-top: 80px;
+  margin-top: 90px;
   background-color: #fff;
   height: 1px;
   width:100%;
 }			
 
 .main-content {
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 .title{
