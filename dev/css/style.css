@@ -16,8 +16,9 @@ body {
 	background-image: url('../img/backPatternGray.png');
 }
 .nav{
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	height: 44px;
-	background: #fff;
+	background: #F8F8F8;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -62,7 +63,7 @@ body {
 	display:block;
 	line-height:44px !important;
 	font-size: 1.0em;
-	font-weight: 550;
+	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -84,9 +85,10 @@ body {
 	-webkit-transition:all .3s linear;
 }
 .nav>ul>li>ul a{
+	text-transform: uppercase;
 	display:block;
 	line-height:50px !important;
-	font-size: 1em;
+	font-size: 0.8em;
 	background:#eee;
 	border-bottom:1px dashed #ddd;
 	text-align:center;
@@ -103,7 +105,11 @@ body {
 .nav>ul>li>ul a:hover{
 	color: rgb(116, 182, 64);
 }
-
+.name {
+	font-weight: 800 !important;
+	font-size: 1.2em !important;
+	color: rgb(88, 138, 50) !important;
+}
 
 .main-content{
 	margin-top: 100px;
