@@ -13,7 +13,7 @@
 		});
 
 		$('html').click(function() {
-		  $( ".nav ul" ).toggleClass('nav-open');
+		  $( ".nav ul" ).removeClass('nav-open');
 		});
 
 		$('.nav').click(function(event){
