@@ -11,7 +11,7 @@ body {
 	line-height: 1;
 	min-width: 680px;
 	margin: 0px;
-	background-color: #F5F5F5;
+	background-image: url('../img/backPatternGray.png');
 }
 .nav{
 	height: 44px;
@@ -94,6 +94,10 @@ body {
 	-moz-transition:all .3s linear .2s;
 	-webkit-transition:all .3s linear .2s;
 }
+.nav>ul>li>ul a:hover{
+	color: rgb(116, 182, 64);
+}
+
 
 .main-content{
 	margin-top: 100px;
