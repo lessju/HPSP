@@ -28,6 +28,7 @@ body {
 	text-decoration:none;
 }
 .nav a:hover{
+	color: rgb(116, 182, 64);
 	transition:all .3s linear;
 	-o-transition:all .3s linear;
 	-moz-transition:all .3s linear;
@@ -45,7 +46,7 @@ body {
 .nav>ul>li{
 	float:left;
 	position:relative;
-	width: 16%;
+	width: 16.66%;
 	height: 44px;
 }
 .nav>ul>li:hover{
@@ -111,7 +112,7 @@ body {
 	line-height: 1.3em;
 	text-align: center;
 	width: 100%;
-	color: rgb(109, 133, 109);
+	color: rgb(116, 182, 64);
 }
 .description {
 	margin-top: 50px;
