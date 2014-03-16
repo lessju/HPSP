@@ -7,6 +7,10 @@
 				processData(data);
 			}
 		});
+
+		$( ".menu" ).click(function() {
+		  $( ".nav ul" ).toggleClass('nav-open');
+		});
 	});
 
 	$(function() {
