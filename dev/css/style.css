@@ -108,7 +108,12 @@ body {
 .menu {
 	display: none !important;
 }
-
+.menu img {
+	width: 29px;
+	margin-top: 11px;
+	float: left;
+	margin-left: 10px;
+}
 .name {
 	font-weight: 800 !important;
 	font-size: 1.2em !important;
@@ -204,7 +209,7 @@ body {
 @media (max-width: 660px){
 	.nav ul{
 		display: none;
-		margin-top: -5px;
+		margin-top: -45px;
 		height: 100%;
 		background: white;
 	}
@@ -217,14 +222,6 @@ body {
 	}
 	.menu {
 		display: block !important;
-		color: rgb(103, 150, 66);
-		text-align: left;
-		font-size: 1.9em;
-		height: 44px;
-		margin: auto;
-		margin-top: 6px;
-		font-weight: 900;
-		margin-left: 7px;
 	}
 }
 
