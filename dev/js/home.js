@@ -14,8 +14,8 @@
 		$('.chart').easyPieChart({
 			animate: 800,
 			scaleColor: false,
-			trackColor: 'rgba(255,255,255,0.3)',
-			barColor: '#E2E2E2',
+			trackColor: 'rgba(116, 182, 64, 0.3)',
+			barColor: 'rgba(116, 182, 64, 0.8)',
 			lineWidth: 6,
 			lineCap: 'butt',
 			size: 95
