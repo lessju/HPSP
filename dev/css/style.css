@@ -338,4 +338,18 @@ div.loader {
 	.nav-box ul li{
 		width: 90%;
 	}
+	.partners img{
+		margin:auto;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 387px){
+	.mins canvas {
+		margin-top: 20px;
+	}
+
+	.mins span {
+		margin-top: 16px;
+	}
 }

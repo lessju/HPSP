@@ -57,6 +57,7 @@ tr.spaceUnder > td
 .table-label{
 	text-align: center;
 	font-size: 1em;
+	padding-right: 30px;
 }
 
 select{
@@ -95,10 +96,11 @@ select{
 		text-align: left;
 		font-size: 0.9em;
 		word-wrap: break-word;
+		padding-right: 0px;
 	}
 }
 
-@media (max-width: 390px){
+@media (max-width: 370px){
 	.ss-q-short{
 	    width: 150px;
 	}
