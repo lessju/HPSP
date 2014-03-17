@@ -1,11 +1,10 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 
 html {
-	height: auto;
+	height: 100%;
 }
 body {
-	height: auto;
+	height: 100%;
 	text-align: center;
 	color: black;
 	font-family:'HelveticaNeue', Roboto;
@@ -13,8 +12,11 @@ body {
 	letter-spacing: 1px;
 	line-height: 1;
 	margin: 0px;
-	background-image: url('../img/backPatternGray.png');
+	background-image: url('../img/backPatternGray2.png');
 }
+
+/* Navigation */
+
 .nav{
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	height: 44px;
@@ -120,7 +122,12 @@ body {
 	color: rgb(88, 138, 50) !important;
 }
 
+/* Content */
+
 .main-content{
+	height: 100%;
+	width: 95%;
+	max-width: 1640px;
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
@@ -130,6 +137,7 @@ body {
 	line-height: 1.3em;
 	text-align: center;
 	width: 100%;
+	font-weight: 700;
 	color: rgb(116, 182, 64);
 }
 .description {
@@ -139,7 +147,7 @@ body {
     max-width: 800px;
     font-size: 1.2em;
     line-height: 1.6em;
-    font-weight: 100;
+    font-weight: 800;
     color: rgb(138, 137, 137);
 }
 .partners{
@@ -156,6 +164,9 @@ body {
 		.partners img:last-child{
 			margin-right: 0px;
 		}
+
+/* Timer */		
+
 .countdown-timer {
 	margin-top:  80px;
 }
@@ -182,6 +193,9 @@ body {
 	left: 0;
 	top: 0;
 }
+
+/* Bottom */
+
 .bottom{
 	position: relative;
 	bottom: 0;
@@ -194,6 +208,50 @@ body {
 	border-top: 1px dashed lightgray;
 }
 
+/* Navigation Grid */
+
+.nav-box {
+	margin-top: 80px;
+}
+
+.nav-box ul {
+	width: 95%;
+	height: 100%;
+	list-style: none;
+	margin: auto;
+}
+	.nav-box ul li{
+	    display: inline-block;
+	    width: 29%;
+	    height: 230px;
+	    float: left;
+	    margin: 5px;
+	    border: 1px dashed rgb(116, 182, 64);
+	    border-radius: 8px;
+	    padding: 10px;
+	}
+	.nav-box ul li:hover{
+	    background: rgba(116, 182, 64,0.3);;
+	}
+
+.nav-box .header{
+	margin-top: 10px;
+	font-weight: 800;
+	color: rgb(116, 182, 64);
+	font-size: 1.5em;
+}
+
+.nav-box .summary{
+    font-weight: 800;
+	margin-top: 50px;
+	line-height: 1.5em;
+	color: rgb(124, 124, 124);
+}
+
+
+
+/* Media Querires */
+
 @media (max-width: 1024px){
 	.nav ul{
 		width: 100%;
@@ -203,6 +261,10 @@ body {
 @media (max-width: 850px){
 	.nav ul li{
 		font-size: 0.8em;
+	}
+
+	.nav-box ul li{
+		width: 43%;
 	}
 }
 
@@ -227,6 +289,7 @@ body {
 
 @media (max-width: 450px){
 	.main-content {
+		width: 100%;
 		margin-top: 80px;
 		padding-left: 5px;
 		padding-right: 5px;
@@ -242,5 +305,15 @@ body {
 
 	.secs span {
 		margin-top: 16px;
+	}
+	.nav-box ul {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		margin: auto;
+		padding-left: 0px;
+	}
+	.nav-box ul li{
+		width: 90%;
 	}
 }
