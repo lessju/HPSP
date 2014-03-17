@@ -1,12 +1,5 @@
 	$(document).ready(function() {
-		$.ajax({
-			type: "GET",
-			url: "https://docs.google.com/spreadsheet/pub?key=0Ap-gZOfxt1nodE9pc3ZLXzFKbVhSUmFfS3VseC1Cdmc&single=true&gid=0&output=csv",
-			dataType: "text",
-			success: function(data) {
-				processData(data);
-			}
-		});
+		
 	});
 
 	$(function() {
@@ -78,23 +71,4 @@
 				$('.mins').attr('data-percent', minutesPercent);
 				$('.secs').attr('data-percent', secondsPercent);
 			}
-		}
-
-		function processData(allText) {
-			var allTextLines = allText.split(/\r\n|\n/);
-			var headers = allTextLines[0].split(',');
-			var lines = [];
-
-			for (var i=1; i<allTextLines.length; i++) {
-				var data = allTextLines[i].split(',');
-				if (data.length == headers.length) {
-
-					var tarr = [];
-					for (var j=0; j<headers.length; j++) {
-						tarr.push(data[j]);
-					}
-					lines.push(tarr);
-				}
-			}
-		    //alert(lines[lines.length-1]);
 		}

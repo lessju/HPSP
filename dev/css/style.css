@@ -266,6 +266,14 @@ div.loader {
 	color: rgb(124, 124, 124);
 }
 
+/* Participants */
+
+.nav-box .particiant-header{
+	margin-top: 25px;
+	font-weight: 800;
+	color: rgb(116, 182, 64);
+	font-size: 1em;
+}
 
 
 /* Media Querires */
@@ -344,7 +352,7 @@ div.loader {
 	}
 }
 
-@media (max-width: 387px){
+@media (max-width: 380px){
 	.mins canvas {
 		margin-top: 20px;
 	}
