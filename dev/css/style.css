@@ -311,6 +311,15 @@ div.loader {
 		width: 100%;
 		background: white;
 	}
+	.nav ul ul{
+		display: none !important;
+	}
+	.nav ul ul li{
+		display: none;
+	}
+	.nav ul ul li a{
+		display: none;
+	}
 	.nav-open {
 		display: block !important;
 	}
