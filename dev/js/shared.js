@@ -1,5 +1,8 @@
 $(document).ready(function() {
 	menuHandler();
+	$('.loader').on('webkitAnimationEnd animationend' , function(event){   
+		$('.loader').hide();
+	});
 });
 
 function menuHandler(){
