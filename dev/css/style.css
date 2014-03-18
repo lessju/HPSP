@@ -307,6 +307,9 @@ div.loader {
 		border-bottom: none;
 		background-color: rgb(235, 235, 235);
 	}
+	.nav-box {
+		margin-top: 20px;
+	 }
 	.main-content {
 		width: 95%;
 		margin-top: 80px;
