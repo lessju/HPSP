@@ -272,7 +272,7 @@
 
 }
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (min-width: 400px , max-width: 660px) {
 
 .direction-l .desc,
 .direction-r .desc {
