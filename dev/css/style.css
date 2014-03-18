@@ -303,6 +303,10 @@ div.loader {
 }
 
 @media (max-width: 660px){
+	.nav>ul>li:hover{
+		border-bottom: none;
+		background-color: rgb(235, 235, 235);
+	}
 	.main-content {
 		width: 95%;
 		margin-top: 80px;

@@ -1,4 +1,5 @@
 table.gridtable {
+	max-width: 1024px;
 	display:none;
 	margin-top: 50px;
 	width: 100%;
@@ -21,6 +22,7 @@ table.gridtable {
 		border-style: solid;
 		border-color: #666666;
 		background-color: #ffffff;
+		word-wrap: break-word;
 	}
 
 .spinner {
