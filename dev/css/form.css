@@ -26,8 +26,7 @@
     outline: none;
     background-color: white;
     font-size: 16px;
-    border: 1px solid rgba(116, 182, 64,0.5);
-	border-color: green;
+    border: 1px solid rgba(116, 182, 64,0.6);
 }
 
 tr.spaceUnder > td
@@ -70,7 +69,6 @@ select{
 	background-color: white;
 	font-size: 16px;
 	border: 1px solid rgba(116, 182, 64,0.5);
-	border-color: green;
 }
 
 .registration-form ul{

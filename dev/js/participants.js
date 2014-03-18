@@ -5,7 +5,11 @@ $(document).ready(function() {
 		dataType: "text",
 		success: function(data) {
 			var results = processData(data);
-
+			setTimeout(function(){
+				$(".spinner").hide();
+				$(".gridtable").fadeIn();
+			},3000);
+			
 		}
 	});
 });
@@ -25,7 +29,7 @@ function processData(allText) {
 				tarr.push(data[j]);
 			}
 			lines.push(tarr);
-			$(".nav-box ul").append('<li><div class="box"><div class="particiant-header">'+tarr[3]+' '+tarr[4]+'</div><div class="summary">'+tarr[28]+'</div></div></li>');		
+			$(".gridtable").append('<tr><td>'+tarr[3]+' '+tarr[4]+'</td><td>'+tarr[28]+'</td><td>'+tarr[5]+'</td><td>'+tarr[16]+'</td></tr>');		
 		}
 	}
  }
