@@ -56,11 +56,16 @@
   float: right;
 }
 
-.flag-wrapper {
+.direction-l .flag-wrapper {
   position: relative;
   display: inline-block;
-  
-  text-align: center;
+  text-align: right;
+}
+
+.direction-r .flag-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: left;
 }
 
 .flag {
@@ -144,10 +149,12 @@
 
 .direction-l .time-wrapper {
   float: left;
+  margin-left: 70px;
 }
 
 .direction-r .time-wrapper {
   float: right;
+  margin-left: 35px;
 }
 
 .time {
@@ -195,7 +202,7 @@
 }
 
 .flag-wrapper {
-  text-align: center;
+  text-align: center !important;
 }
 
 .flag {
@@ -243,10 +250,12 @@
 
 .direction-l .time-wrapper {
   float: none;
+  margin-left: 0px;
 }
 
 .direction-r .time-wrapper {
   float: none;
+  margin-left: 0px;
 }
 
 .desc {

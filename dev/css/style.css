@@ -1,7 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
-@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
 @import url(http://fonts.googleapis.com/css?family=Lato);
-
 
 html {
 	height: 100%;
@@ -283,16 +280,41 @@ div.loader {
 	font-size: 1em;
 }
 
+/* About Malta */
+
+.info-section{
+	width: 80%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 200px;
+	text-align: left;
+}
+
+	.info-section .info-text a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.info-section .info-images {
+		margin-top: 50px;
+	}
+
+	.info-section .info-images img{
+		width: 100%;
+	}
 
 /* Media Querires */
 
-@media (max-width: 1048px){
+@media (max-width: 1152px){
 	.nav ul{
 		width: 100%;
 	}
 }
 
-@media (max-width: 850px){
+@media (max-width: 927px){
 	.nav ul li{
 		font-size: 0.8em;
 	}
@@ -302,7 +324,7 @@ div.loader {
 	}
 }
 
-@media (max-width: 660px){
+@media (max-width: 768px){
 	.nav>ul>li:hover{
 		border-bottom: none;
 		background-color: rgb(235, 235, 235);
@@ -340,6 +362,10 @@ div.loader {
 	}
 	.menu {
 		display: block !important;
+	}
+
+	.info-section{
+		width: 95%;
 	}
 }
 
