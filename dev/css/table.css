@@ -1,5 +1,7 @@
 table.gridtable {
 	max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 	display:none;
 	margin-top: 50px;
 	width: 100%;
@@ -26,7 +28,7 @@ table.gridtable {
 	}
 
 .spinner {
-  margin: 20% auto 0;
+  margin: 15% auto 0;
   width: 200px;
   text-align: center;
 }

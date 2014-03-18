@@ -29,7 +29,7 @@ function processData(allText) {
 				tarr.push(data[j]);
 			}
 			lines.push(tarr);
-			$(".gridtable").append('<tr><td>'+tarr[3]+' '+tarr[4]+'</td><td>'+tarr[28]+'</td><td>'+tarr[5]+'</td><td>'+tarr[16]+'</td></tr>');		
+			$(".gridtable").append('<tr><td>'+tarr[2]+' '+tarr[3]+' '+tarr[4]+'</td><td>'+tarr[28]+'</td><td>'+tarr[13]+'</td></tr>');		
 		}
 	}
  }
