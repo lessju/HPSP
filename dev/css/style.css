@@ -241,6 +241,9 @@ div.loader {
 /* Navigation Grid */
 
 .nav-box {
+	max-width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 80px;
 }
 
@@ -277,7 +280,7 @@ div.loader {
 
 .nav-box .summary{
     font-weight: 800;
-	margin-top: 50px;
+	margin-top: 45px;
 	line-height: 1.5em;
 	color: rgb(124, 124, 124);
 }
@@ -430,6 +433,7 @@ div.loader {
 	}
 	.nav-box .summary {
 		font-size: 0.9em;
+		margin-top: 33px;
 	}
 }
 
