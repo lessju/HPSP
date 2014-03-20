@@ -387,6 +387,19 @@ div.loader {
 
 }
 
+@media (max-width: 550px){
+	.nav-box ul {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		margin: auto;
+		padding-left: 10px;
+	}
+	.nav-box ul li{
+		width: 90%;
+	}
+}
+
 @media (max-width: 450px){
 	.main-content {
 		margin-left: 8px;
@@ -404,16 +417,6 @@ div.loader {
 	.secs span {
 		margin-top: 16px;
 	}
-	.nav-box ul {
-		width: 100%;
-		height: 100%;
-		list-style: none;
-		margin: auto;
-		padding-left: 0px;
-	}
-	.nav-box ul li{
-		width: 90%;
-	}
 	.partners img{
 		margin:auto;
 		margin-bottom: 50px;
@@ -421,6 +424,12 @@ div.loader {
 	.info-section{
 		text-align: center;
 		font-size: 0.8em;
+	}
+	.nav-box ul {
+		padding-left: 0px;
+	}
+	.nav-box .summary {
+		font-size: 0.9em;
 	}
 }
 
