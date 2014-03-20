@@ -102,8 +102,8 @@ select{
 		.registration-form{
 			width: 100%;
 			max-width: 750px;
-			padding-left:5px;
-			padding-right:5px;
+			padding-left:0px;
+			padding-right:2px;
 			padding-top:5px;
 			padding-bottom:5px;
 		}
