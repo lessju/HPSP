@@ -1,7 +1,18 @@
 .registration-form{
+	width: 80%;
+	max-width: 750px;
 	margin-top: 50px;
-	margin-bottom: 200px;
+	margin-bottom: 500px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: left;
+	background-color:rgba(160, 211, 151, 0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+    -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 .ss-q-title{
@@ -20,14 +31,21 @@
 .ss-q-short{
 	padding: 2px;
     height: 40px;
-    width: 300px;
+    width: 294px;
     position: relative;
     left: 0;
     outline: none;
     background-color: white;
     font-size: 16px;
-    border: 1px solid rgba(116, 182, 64,0.6);
+    border: 1px solid rgba(149, 156, 143, 0.6);
+    color: rgb(116, 182, 64);
+    text-transform: uppercase;
+    padding-left: 8px;
 }
+
+	.ss-q-short:focus{
+	  	border: 1px solid rgba(116, 182, 64,0.8);
+	}
 
 tr.spaceUnder > td
 {
@@ -36,7 +54,6 @@ tr.spaceUnder > td
 .form-table>tbody>tr{ 
 	width:500px;
 }
-
 
 .submit-form{
 	padding:15px 25px; 
@@ -55,8 +72,9 @@ tr.spaceUnder > td
 
 .table-label{
 	text-align: center;
-	font-size: 1em;
+	font-size: 0.8em;
 	padding-right: 30px;
+	text-transform: uppercase;
 }
 
 select{
@@ -68,11 +86,23 @@ select{
 	outline: none;
 	background-color: white;
 	font-size: 16px;
-	border: 1px solid rgba(116, 182, 64,0.5);
+	border: 1px solid rgba(149, 156, 143, 0.6);
+	color: rgb(116, 182, 64);
 }
 
 .registration-form ul{
 	list-style: none;
+}
+
+@media (max-width: 650px){
+		.registration-form{
+			width: 100%;
+			max-width: 750px;
+			padding-left:5px;
+			padding-right:5px;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
 }
 
 
@@ -81,7 +111,7 @@ select{
 		width: 100%;
 	}
 	.ss-q-short{
-	    width: 200px;
+	    width: 194px;
 	}
 	select{
 	 width: 206px;
@@ -91,21 +121,24 @@ select{
 	-webkit-column-width: 100px;
 	}
 	.table-label{
-		text-align: left;
+		text-align: right;
 		font-size: 0.9em;
 		word-wrap: break-word;
 		padding-right: 0px;
+	}
+	.table-label{
+		font-size: 0.7em;
 	}
 }
 
 @media (max-width: 370px){
 	.ss-q-short{
-	    width: 150px;
+	    width: 144px;
 	}
 	select{
 	 	width: 156px;
 	}
 	.table-label{
-		font-size: 0.8em;
+		font-size: 0.6em;
 	}
 }

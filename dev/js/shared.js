@@ -8,10 +8,12 @@ $(document).ready(function() {
 function menuHandler(){
 	$( ".menu" ).click(function() {
 		$( ".nav ul" ).toggleClass('nav-open');
+		$( ".overlay" ).toggle();
 	});
 
 	$('html').click(function() {
 		$( ".nav ul" ).removeClass('nav-open');
+		$( ".overlay" ).hide();
 	});
 
 	$('.nav').click(function(event){

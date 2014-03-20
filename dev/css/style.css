@@ -123,13 +123,24 @@ body {
 	color: rgb(88, 138, 50) !important;
 }
 
+.overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
 /* Page Loader */
 
 div.loader {
   	position: fixed;
 	top: 44px;
 	padding: 1px;
-	background-color: rgb(88, 138, 50);
+	background-color: rgb(116, 182, 64);
 	width: 100%;
 	-webkit-animation: load 1s;
 }
@@ -329,6 +340,7 @@ div.loader {
 		border-bottom: none;
 		background-color: rgb(235, 235, 235);
 	}
+	
 	.nav-box {
 		margin-top: 20px;
 	 }
@@ -344,21 +356,25 @@ div.loader {
 		height: 100%;
 		background: white;
 	}
-	.nav ul li{
-		width: 100%;
-		background: white;
-	}
-	.nav ul ul{
-		display: none !important;
-	}
-	.nav ul ul li{
-		display: none;
-	}
-	.nav ul ul li a{
-		display: none;
-	}
+		.nav ul li{
+			width: 100%;
+			background: white;
+		}
+		.nav ul ul{
+			display: none !important;
+		}
+		.nav ul ul li{
+			display: none;
+		}
+		.nav ul ul li a{
+			display: none;
+		}
 	.nav-open {
 		display: block !important;
+	}
+	.selected {
+		border-bottom: none;
+		color: rgb(116, 182, 64);
 	}
 	.menu {
 		display: block !important;
@@ -366,7 +382,9 @@ div.loader {
 
 	.info-section{
 		width: 95%;
+		font-size: 1em;
 	}
+
 }
 
 @media (max-width: 450px){
@@ -399,6 +417,10 @@ div.loader {
 	.partners img{
 		margin:auto;
 		margin-bottom: 50px;
+	}
+	.info-section{
+		text-align: center;
+		font-size: 0.8em;
 	}
 }
 
