@@ -294,7 +294,7 @@ div.loader {
 	font-size: 1em;
 }
 
-/* About Malta */
+/* Info Boxes */
 
 .info-section{
 	width: 80%;
@@ -314,11 +314,36 @@ div.loader {
 
 	.info-section .info-images {
 		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 820px;
 	}
 
 	.info-section .info-images img{
 		width: 100%;
 	}
+
+	.info-section .info-text .sub-text {
+		margin-bottom: 40px;
+	}
+
+		.info-section .info-text .sub-text .sub-head{
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+.fotorama__dot {
+	height: 10px !important;
+	width: 10px !important;
+	border: 1px solid rgb(116, 182, 64) !important;
+}
+
+.fotorama__nav__frame.fotorama__active .fotorama__dot{
+	border: 1px solid rgb(116, 182, 64) !important;
+	background-color: #83B986 !important;
+}
+
+
 
 /* Media Querires */
 
