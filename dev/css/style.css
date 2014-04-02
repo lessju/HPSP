@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
+
+* {
+    margin:0;
+    padding:0;
+}
+
 html {
 	height: 100%;
 }
@@ -12,7 +18,10 @@ body {
 	line-height: 1;
 	margin: 0px;
 	background-image: url('../img/backPatternGray2.png');
+	position:absolute; top:0; bottom:0; right:0; left:0;
+
 }
+
 
 /* Navigation */
 
@@ -153,13 +162,19 @@ div.loader {
 /* Content */
 
 .main-content{
-	height: 100%;
 	width: 95%;
-	max-width: 1640px;
-	margin-top: 100px;
+	max-width: 1240px;
+	margin-top: 80px;
 	margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	background: #f9f9f9;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	padding: 30px;
 }
 .title{
 	font-size: 1.8em;
@@ -175,7 +190,7 @@ div.loader {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6em;
     font-weight: 500;
     color: rgb(138, 137, 137);
@@ -245,11 +260,11 @@ div.loader {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 80px;
+	height: auto;
 }
 
 .nav-box ul {
 	width: 95%;
-	height: 100%;
 	list-style: none;
 	margin: auto;
 }
@@ -301,9 +316,8 @@ div.loader {
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.5em;
-	margin-bottom: 200px;
 	text-align: left;
 }
 
@@ -332,6 +346,16 @@ div.loader {
 			font-weight: bold;
 		}
 
+		.info-section .info-text .sub-text .sub-info a{
+			color: rgb(116, 182, 64);
+			border: 1px solid;
+			padding: 10px;
+		}
+		.info-section .info-text .sub-text .sub-info a:hover{
+			color: white;
+			background: rgb(116, 182, 64);
+		}
+
 .fotorama__dot {
 	height: 10px !important;
 	width: 10px !important;
@@ -344,6 +368,10 @@ div.loader {
 }
 
 
+.footer{
+	height: 50px;
+	position: relative;
+}
 
 /* Media Querires */
 
@@ -426,6 +454,14 @@ div.loader {
 	.nav-box ul li{
 		width: 90%;
 	}
+
+	.sub-info ul {
+		padding-left: 5px;
+	}
+
+	.sub-info ul li{
+		text-align: left;
+	}
 }
 
 @media (max-width: 450px){
@@ -451,7 +487,7 @@ div.loader {
 	}
 	.info-section{
 		text-align: center;
-		font-size: 0.8em;
+		font-size: 0.95em;
 	}
 	.nav-box ul {
 		padding-left: 0px;
