@@ -367,6 +367,20 @@ div.loader {
 	background-color: #83B986 !important;
 }
 
+/*About Conference*/
+
+.about-section{
+	margin-top: 20px;
+}
+
+	.about-section .about-title{
+		font-weight: bold;
+	}
+
+	.about-section .about-names ul{
+		list-style: none;
+	}
+
 
 .footer{
 	height: 50px;
@@ -403,8 +417,7 @@ div.loader {
 	.main-content {
 		width: 95%;
 		margin-top: 80px;
-		margin-left: 5px;
-		margin-left: 5px;
+		margin-left: auto;
 	}
 	.nav ul{
 		display: none;
@@ -443,6 +456,17 @@ div.loader {
 
 }
 
+
+@media (max-width: 574px){
+	.secs canvas {
+		margin-top: 20px;
+	}
+
+	.secs span {
+		margin-top: 16px;
+	}
+}
+
 @media (max-width: 550px){
 	.nav-box ul {
 		width: 100%;
@@ -466,21 +490,15 @@ div.loader {
 
 @media (max-width: 450px){
 	.main-content {
-		margin-left: 8px;
-		margin-left: 8px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.title{
 		font-size: 1.5em;
 		line-height: 1.3em;
 	}
 
-	.secs canvas {
-		margin-top: 20px;
-	}
-
-	.secs span {
-		margin-top: 16px;
-	}
+	
 	.partners img{
 		margin:auto;
 		margin-bottom: 50px;
@@ -496,9 +514,7 @@ div.loader {
 		font-size: 0.9em;
 		margin-top: 33px;
 	}
-}
 
-@media (max-width: 380px){
 	.mins canvas {
 		margin-top: 20px;
 	}
@@ -506,4 +522,8 @@ div.loader {
 	.mins span {
 		margin-top: 16px;
 	}
+}
+
+@media (max-width: 480px){
+	
 }
