@@ -1,0 +1,16 @@
+Please fill in the form below to register for HPSP 2014. You will then be contacted by one of the LOC with payment details. Please note that it may take up to one working day for your submission to be processed and display on the official attendee list. 
+
+Conference fee is €250, while the conference dinner fee is €50. Partners are welcome to the conference dinner for the same price. Information regarding accommodation can be found here. [CONTI: reword last sentence] 
+
+If you are interested in participating in a public or industry outreach event please fill in the appropriate entry below and we will contact you directly. You can send ideas about such event on outreach@hpsp2014.com
+
+If you have any queries don't hesitate to contact us on register@hpsp2014.com
+
+
+To do
+-----
+
+- Use new form
+- Remove "badge name" from surname
+- More space between each entry
+- Larger submit button (width of text fields)
