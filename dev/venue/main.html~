@@ -8,16 +8,16 @@
 	<title>HPSP 2014</title>
 
 	<!--Stylesheets-->
-	<link rel="icon" href="img/favicon.ico"/>
-	<link rel='stylesheet' href='css/style.css'>
+	<link rel="icon" href="../img/favicon.ico"/>
+	<link rel='stylesheet' href='../css/style.css'>
 
 	<!--Javascript-->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="js/shared.js" type="text/javascript"></script>
+    <script src="../js/shared.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class='nav'>
-		<span class='menu'><img src='img/overflowMenu.png'></span>
+		<span class='menu'><img src='../img/overflowMenu.png'></span>
 		<ul>
 			<li><a class='name' href='/'>HPSP 2014</a></li>
 			<li><a href='registration'>Registration</a>
@@ -40,49 +40,43 @@
 	<div class="loader"></div>
 	<div class='main-content'>
 		<div class='title'>
-			Conference Info
+			Venue
 		</div>
 		<div class='description'>
-			All the relevant information re. the conference can be found here.
+			HPSP2014 will be organised in Malta between the 28th and 31st of October. Click on the relevant link to learn more. Please note that details regarding the conference dinner will be announced shortly.
 		</div>
 		<div class='nav-box'>
 			<ul>
 				<li><a href='info/about'>
 					<div class='box'>
-						<div class='header'>About Conference</div>
-						<div class='summary'>Click here to find all the relevant information about the conference.
+						<div class='header'>Accomodation</div>
+						<div class='summary'>Click here to find all the relevant information about the accomodation
 						</div></a>
 					</div>
 				</a></li>
 				<li><a href='info/timeline'>
 					<div class='box'>
-						<div class='header'>Dates</div>
-						<div class='summary'>Click here to see a timeline showing all the conference deadlines.
+						<div class='header'>About Malta</div>
+						<div class='summary'>Click here to see general information about the Maltese Islands
 						</div></a>
 					</div>
 				</a></li>
 				<li><a href='info/participants'>
 					<div class='box'>
-						<div class='header'>Participants</div>
-						<div class='summary'>View the list of accepted participants.</div>
+						<div class='header'>Conference Venues</div>
+						<div class='summary'>Some information about the University of Malta (Valletta Campus) and Villa Bighi.</div>
 					</div></a>
 				</li>
 				<li><a href='info/papers'>
 					<div class='box'>
-						<div class='header'>Papers/Posters</div>
-						<div class='summary'>A list of all the papers and posters that will be presentated at the conference.</div>
+						<div class='header'>Conference Dinner</div>
+						<div class='summary'>Coming Soon</div>
 					</div></a>
 				</li>
 				<li><a href='info/partners'>
 					<div class='box'>
-						<div class='header'>Partners</div>
-						<div class='summary'>HPSP 2014 is held in collaboration with a number of technical partners.</div>
-					</div></a>
-				</li>
-				<li><a href='info/sponsors'>
-					<div class='box'>
-						<div class='header'>Sponsors</div>
-						<div class='summary'>HPSP 2014 is sponosed by a number of local and international companies.</div>
+						<div class='header'>Transportation</div>
+						<div class='summary'>General information about transportation in Malta</div>
 					</div></a>
 				</li>
 			</ul>
