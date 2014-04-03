@@ -376,6 +376,10 @@ div.loader {
 			background: rgb(116, 182, 64);
 		}
 
+		.info-section ul li{
+			margin-left: 30px;
+		}
+
 .fotorama__dot {
 	height: 10px !important;
 	width: 10px !important;
