@@ -51,6 +51,7 @@ tr.spaceUnder > td
 }
 .form-table>tbody>tr{ 
 	width:500px;
+	height:60px;
 }
 
 .submit-form{
