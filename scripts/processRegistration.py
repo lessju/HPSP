@@ -1,3 +1,4 @@
+from time import sleep
 import sqlite3
 import urllib2
 import ftplib
@@ -207,6 +208,7 @@ if __name__ == "__main__":
     while(True):
         
         # Wait for some time before doing this
+        print "Checking form"
         sleep(60)
 
     processRegistration()
