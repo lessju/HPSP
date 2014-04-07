@@ -1,25 +1,24 @@
 
-Signal processing lies at the core of large-scale physics instruments, from correlating tens of thousands of antennas in the upcoming Square Kilometer Array to beam diagnostics in the Large Hadron Collider. These instruments pose similar challenges in addressing large data rates and processing requirements, with algorithms implemented on a wide variety of architectures, including FPGA, GPU and multi-core systems. The main aim of this conference is to bring together leading experts from academia and industry, specialising in different fields, where experiences and solutions can be shared and improved. The conference will be split into XXX major research areas:
+Signal processing lies at the core of large-scale physics instruments, from correlating tens of thousands of antennas in the upcoming Square Kilometer Array to beam diagnostics in the Large Hadron Collider. These instruments pose similar challenges in addressing large data rates and processing requirements, with algorithms implemented on a wide variety of architectures, including FPGA, GPU and multi-core systems. The main aim of this conference is to bring together leading experts from academia and industry, specialising in different fields, where experiences and solutions can be shared and improved. 
 
-- Radio Astronomy and the Square Kilometer Array
-- Particle Physics and the Large Hadron Collider
-- 
-- 
+Large scale instruments which will be discussed in this conference include: The Low Frequency Array; the Square Kilometer Array; the Cherenkov Telescope Array; the Large Hadron Collider (including ATLAS and CMS experiments) and the European X-Ray Free Electron Laser. The conference is split into five major research areas:
 
-To do: Insert subfield and chair person for each field
+- Time Domain Processing
+- Processing Pipelines
+- Data Acquisition
+- Filtering
+- Imaging
+
 
 Science Organising Committe
 ---------------------------
 
-Dr Kristian Zarb Adami
-...
-
-
-Industrial Partners
--------------------
-
-Dr Mike Clark (NVIDIA)
-...
+Kristian Zarb Adami (ISSA, University of Malta)
+Dave Newbold (University of Bristol)
+Rob Halsall (STFC, RAL)
+Scott Ransom (NRAO, University of Virginia)
+Aurore Savoy-Navarro (CNRS-FR/INFN-IT)
+Patrick Gessler (XFEL)
 
 
 Local Organising Committe
