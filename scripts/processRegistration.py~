@@ -7,11 +7,12 @@ import os, re
 
 # Global variables
 participantsURL = "https://docs.google.com/spreadsheet/pub?key=0AldfGE7a-kvPdGZBVnE5dlRYT056YS1wbEI2bmpqYkE&output=csv"
+generateCSV = False
 databaseName    = "hpsp2014.db"
 emailUsername   = "lessju"
 emailPassword   = "Arcadia10"
-ftpServer       = "hpsp2014.com"
-ftpUsername     = "lessju"
+ftpServer       = "ftp.hpsp2014.com"
+ftpUsername     = "hpsp2014com"
 ftpPassword     = "Arcadia10!"
 formEntries = {
     'timestamp'   : 0,
@@ -71,12 +72,11 @@ def sendNewParticipantsEmail(data, newParticipants):
     fromaddr = 'alessio.magro@hpsp2014.com'  
     toaddrs  = 'alessio.magro@hpsp2014.com'
 #                ian.fenech.conti@hpsp2014.com,\
-#                jackson.levi.said@hpsp2014.com,\
-#                kza@hpsp2014.com'  
+#                jackson.levi.said@hpsp2014.com'
 
     body = 'New users have registered for HPSP2014:\n' 
     for i in newParticipants:
-        body += "\t%s %s from %s" % (data[i][formEntries['forename']],
+        body += "\t%s %s from %s\n" % (data[i][formEntries['forename']],
                                      data[i][formEntries['surname']],
                                      data[i][formEntries['affiliation']])
 
@@ -161,7 +161,8 @@ def updateRegistrants(data):
         sendNewParticipantsEmail(data, newParticipants)
 
     # Generate CSV file and send to FTP server
-    generateCSVFile(data)
+    if generateCSV:
+        generateCSVFile(data)
 
 def processRegistration():
     """ Process registration list """
@@ -203,10 +204,11 @@ if __name__ == "__main__":
     initialiseDatabase()
 
     # Loop forever
-  #  while(True):
+    while(True):
         
         # Wait for some time before doing this
-#        sleep(1)
+        print "Checking form"
+        sleep(60)
 
     processRegistration()
 
