@@ -535,6 +535,8 @@ div.loader {
 	.main-content {
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 55px;
+		padding: 30px 5px;
 	}
 	.title{
 		font-size: 1.5em;
