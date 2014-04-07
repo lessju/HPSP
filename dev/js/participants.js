@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$.ajax({
 		type: "GET",
-		url: "https://docs.google.com/spreadsheet/pub?key=0AldfGE7a-kvPdFlHQjFEdjdIbmJtdWZuX050M2tjVFE&single=true&gid=0&output=csv",
+		url: "https://docs.google.com/spreadsheet/pub?key=0AldfGE7a-kvPdGZBVnE5dlRYT056YS1wbEI2bmpqYkE&output=csv",
 		dataType: "text",
 		success: function(data) {
 			var results = processData(data);
@@ -28,8 +28,14 @@ function processData(allText) {
 			for (var j=0; j<headers.length; j++) {
 				tarr.push(data[j]);
 			}
+			var published = true;
+			if (tarr[14] == ''){
+				published = false;
+			}
 			lines.push(tarr);
-			$(".gridtable").append('<tr><td>'+tarr[2]+' '+tarr[3]+' '+tarr[4]+'</td><td>'+tarr[28]+'</td><td>'+tarr[13]+'</td></tr>');		
+			if(published == true){
+				$(".gridtable").append('<tr><td>'+tarr[2]+' '+tarr[3]+ '</td><td>'+tarr[5]+'</td><td>'+tarr[9]+'</td></tr>');		
+			}
 		}
 	}
  }
