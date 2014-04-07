@@ -219,9 +219,19 @@ div.loader {
 		width: 100px;
 		margin-top: 20px;
 		margin-right: 40px;
+		position:relative;
 	}
 		.partners img:last-child{
 			margin-right: 0px;
+		}
+		.partners .uom{
+			top: -11px;
+		}
+		.partners .excel{
+			top: -26px;
+		}
+		.partners .hertz{
+			top: -45px;
 		}
 
 /* Timer */		
