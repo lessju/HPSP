@@ -188,6 +188,10 @@ div.loader {
 	margin-bottom: 20px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	padding: 30px;
 }
 .title{
