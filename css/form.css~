@@ -136,9 +136,6 @@ select{
 	.ss-q-short{
 	    width: 194px;
 	}
-	.ss-q-long{
-	    width: 194px;
-	}
 	select{
 	 width: 206px;
 	}
@@ -162,9 +159,6 @@ select{
 
 @media (max-width: 370px){
 	.ss-q-short{
-	    width: 144px;
-	}
-	.ss-q-long{
 	    width: 144px;
 	}
 	select{

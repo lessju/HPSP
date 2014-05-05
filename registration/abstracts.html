@@ -10,17 +10,53 @@
 	<!--Stylesheets-->
 	<link rel="icon" href="../img/favicon.ico"/>
 	<link rel='stylesheet' href='../css/style.css'>
+	<link rel='stylesheet' href='../css/form.css'>
 	<link rel="stylesheet" type="text/css" href="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.css" />
 
 	<!--Javascript-->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <script src="../js/shared.js" type="text/javascript"></script>
-    <script src="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.js" type="text/javascript"></script>
-    <script src="../js/analytics.js" type="text/javascript"></script>
+	<script src="../js/shared.js" type="text/javascript"></script>
+	<script src="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.js" type="text/javascript"></script>
+	<script src="../js/analytics.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#ss-submit').css('background-color', 'rgb(228, 123, 123)');
+			$('#ss-submit').css('color', 'white');
+
+		    $('.word_count').each(function() {
+		        var input = '#' + this.id;
+		        var count = input + '_count';
+		        $(count).show();
+		        word_count(input, count);
+		        $(this).keyup(function() { word_count(input, count) });
+		    });
+
+		});
+
+		function word_count(field, count) {
+
+		    var number = 0;
+		    var matches = $(field).val().match(/\b/g);
+		    if(matches) {
+		        number = matches.length/2;
+		    }
+		    $(count).text( number + ' Word' + (number != 1 ? 's' : '') + '');
+		    if (number >= 100 && number <= 400){
+		    	$(".submit-form").removeAttr("disabled");
+		    	$('#ss-submit').css('background-color', 'rgb(116, 182, 64)');	
+		    } else {
+		    	$('#ss-submit').css('background-color', 'rgb(228, 123, 123)');
+		    	$(".submit-form").attr('disabled','disabled');
+		    }
+
+
+		}
+	</script>
 
 </head>
 <body>
-		<div class='nav'>
+	<div class='nav'>
 		<span class='menu'><img src='../img/overflowMenu.png'></span>
 		<ul>
 			<li><a class='name' href='/'>HPSP 2014</a></li>
@@ -62,16 +98,58 @@
 	</div>
 	<div class="loader"></div>
 	<div class="overlay"></div>
-	<div class='main-content'>
-		<div class='title'>
-			Abstracts
-		</div>
-		<div class='info-section'>
-			<div class='info-text'>
-				<center>Abstract submissions open on the 1st May 2014.</center>
+	<div class="main-content">
+		<div class="title">Abstracts</div>
+		<div class="description">Please fill in the form below to submit an abstract for HPSP 2014. You will then be contacted by one of the LOC with pending approval of your submission.</div>
+		<br><br> If you have any queries don't hesitate to contact us on <span style="color: #74b640;">register@hpsp2014.com</span>
+		<div class="registration-form">
+			<form id="ss-form" action="https://docs.google.com/forms/d/15UCXBTXBay_nz03MbS0rz9rQJeC7T4kSNZBbPU60BVM/formResponse" target="_blank" method="POST" onsubmit>
+				<div role="list">
+					<table class="form-table" border="0">
+						<tbody>
+							<tr>
+								<td class="table-label">Full Name</td>
+								<td><input type="text" name="entry.1280353972" value="" class="ss-q-short" id="entry_1280353972" dir="auto" aria-label="Full Name  " aria-required="true" required="" title=""></td>
+							</tr>
+							<tr>
+								<td class="table-label">Institution</td>
+								<td><input type="text" name="entry.1119555089" value="" class="ss-q-short" id="entry_1119555089" dir="auto" aria-label="Institution  " aria-required="true" required="" title=""></td>
+							</tr>
+							<tr>
+								<td class="table-label">Submission Type</td>
+								<td>
+									<ul class="ss-choices" role="radiogroup" aria-label="Submission type  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.689317953" value="Paper" id="group_689317953_1" role="radio" class="ss-q-radio" aria-label="Paper" required="" aria-required="true"></span>
+										<span class="ss-choice-label">Paper</span>
+									</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.689317953" value="Poster" id="group_689317953_2" role="radio" class="ss-q-radio" aria-label="Poster" required="" aria-required="true"></span>
+									<span class="ss-choice-label">Poster</span>
+								</label></li></ul>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-label">Submission Title<br/><br/></td>
+								<td><input type="text" name="entry.545088115" value="" class="ss-q-short abstract-lower" id="entry_545088115" dir="auto" aria-label="Submission title  " aria-required="true" required="" title=""><br/><br/></td>
+							</tr>
+
+							<tr>
+								<td class="table-label abstract-label" style="vertical-align:top;">Abstract</td>
+								<td>
+									(Abstract must be between 100 - 400 words)
+									<br><br>
+									<div id="abs_count" style="display:none; color="#74b640";"></div>
+									<br>
+									<textarea id="abs" name="entry.1938986461" rows="8" cols="0" class="ss-q-long word_count" id="entry_1938986461" dir="auto" aria-label="Abstract Abstract must be between 100 - 400 words Must be at least 100 characters." aria-required="true" required=""></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-label">&nbsp;</td>
+								<td><input name="draftResponse" type="hidden" value="[,,&quot;-2431122520849810672&quot;]"> <input name="fbzx" type="hidden" value="-2431122520849810672"> <input id="ss-submit" class="submit-form" name="submit" type="submit" value="Submit" disabled></td>
+							</tr>
+					</tbody>
+				</table>
 			</div>
-		</div>
+		</form>
 	</div>
+</div>
 </body>
 </html>
 
