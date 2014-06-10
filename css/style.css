@@ -149,8 +149,8 @@ body {
 div.loader {
 	z-index: 100000;
   	position: fixed;
-	top: 40px;
-	padding: 2px;
+	top: 42px;
+	padding: 1px;
 	background-color: rgb(116, 182, 64);
 	width: 100%;
 	animation: load 1s;
@@ -233,6 +233,10 @@ div.loader {
 		}
 		.partners .uom{
 			top: -11px;
+		}
+		.partners .issa{
+			width: 165px;
+			top: -16px;
 		}
 		.partners .excel{
 			top: -26px;
