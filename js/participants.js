@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	$.ajax({
 		type: "GET",
-		url: "https://docs.google.com/spreadsheet/pub?key=0AldfGE7a-kvPdGZBVnE5dlRYT056YS1wbEI2bmpqYkE&output=csv",
-		dataType: "text",
+		url: "https://docs.google.com/spreadsheets/d/1-ke5HjZrX5DjyfvsBs0s9EHsR7ap8lD7oA2hsPSEDSU/export?format=csv&id",
+		dataType: "jsonp",
 		success: function(data) {
 			var results = processData(data);
 			setTimeout(function(){
@@ -13,6 +13,11 @@ $(document).ready(function() {
 		}
 	});
 });
+
+// dataType: 'jsonp',
+
+//export?format=csv&id
+//https://docs.google.com/spreadsheets/d/1-ke5HjZrX5DjyfvsBs0s9EHsR7ap8lD7oA2hsPSEDSU/
 
 
 function processData(allText) {

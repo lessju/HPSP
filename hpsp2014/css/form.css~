@@ -1,0 +1,170 @@
+.registration-form{
+	width: 80%;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 50px;
+}
+
+.ss-q-title{
+	color: red;
+	width: 50%;
+}
+
+.ss-choice-label{
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.form-table{
+	margin: auto;
+}
+
+.submit-table{
+	margin: auto;
+}
+
+.ss-q-short{
+	padding: 2px;
+    height: 40px;
+    width: 294px;
+    position: relative;
+    left: 0;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid rgba(149, 156, 143, 0.6);
+    color: rgb(116, 182, 64);
+    text-transform: uppercase;
+    padding-left: 8px;
+}
+
+	.ss-q-short:focus{
+	  	border: 1px solid rgba(116, 182, 64,0.8);
+	}
+	
+.ss-q-long{
+    font-family: 'Lato', sans-serif;
+    padding: 2px;
+    height: 200px;
+    width: 294px;
+    position: relative;
+    left: 0;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid rgba(149, 156, 143, 0.6);
+    color: rgb(116, 182, 64);
+    text-transform: initial;
+    padding-left: 8px;
+}
+
+	.ss-q-long:focus{
+	  	border: 1px solid rgba(116, 182, 64,0.8);
+	}
+
+tr.spaceUnder > td
+{
+  margin-top: 2px;
+}
+.form-table>tbody>tr{ 
+	width:500px;
+	height:60px;
+}
+
+.submit-form{
+	padding:15px 25px; 
+	background:#fff; 
+	border:1px solid rgb(116, 182, 64);
+	cursor:pointer;
+	transition:all .3s linear .2s;
+	-o-transition:all .3s linear .2s;
+	-moz-transition:all .3s linear .2s;
+	-webkit-transition:all .3s linear .2s;
+}
+	.submit-form:hover{
+		color: white;
+		background: rgb(116, 182, 64);;
+	}
+
+.table-label{
+	text-align: center;
+	font-size: 0.8em;
+	padding-right: 30px;
+	text-transform: uppercase;
+}
+
+select{
+	padding: 2px;
+	height: 46px;
+	width: 306px;
+	position: relative;
+	left: 0;
+	outline: none;
+	background-color: white;
+	font-size: 16px;
+	border: 1px solid rgba(149, 156, 143, 0.6);
+	color: rgb(116, 182, 64);
+}
+
+.registration-form ul{
+	list-style: none;
+}
+
+.abstract-lower{
+	text-transform: initial !important;
+}
+
+@media (max-width: 650px){
+		.registration-form{
+			width: 100%;
+			max-width: 750px;
+			padding-left:0px;
+			padding-right:2px;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+}
+
+
+@media (max-width: 450px){
+	.form-table{
+		width: 100%;
+	}
+	.ss-q-short{
+	    width: 194px;
+	}
+	select{
+	 width: 206px;
+	}
+	.form-table>tbody>tr>td:first-child{ 
+			column-width: 100px;
+	-webkit-column-width: 100px;
+	}
+	.table-label{
+		text-align: right;
+		font-size: 0.9em;
+		word-wrap: break-word;
+		padding-right: 0px;
+	}
+	.table-label{
+		font-size: 0.7em;
+	}
+	.ss-choice-label{
+		font-size: 0.6em;
+	}
+}
+
+@media (max-width: 370px){
+	.ss-q-short{
+	    width: 144px;
+	}
+	select{
+	 	width: 156px;
+	}
+	.table-label{
+		font-size: 0.6em;
+	}
+}

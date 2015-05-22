@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	
+	<title>HPSP 2014</title>
+
+	<!--Stylesheets-->
+	<link rel="icon" href="img/favicon.ico"/>
+	<link rel='stylesheet' href='css/style.css'>
+	<link rel="stylesheet" type="text/css" href="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.css" />
+
+	<!--Javascript-->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/shared.js" type="text/javascript"></script>
+    <script src="http://fotorama.s3.amazonaws.com/4.4.9/fotorama.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div class='nav'>
+		<span class='menu'><img src='img/overflowMenu.png'></span>
+		<ul>
+			<li><a class='name' href='/'>HPSP 2014</a></li>
+			<li><a href='registration'>Registration</a>
+				<ul>
+					<li><a href='register'>Register</a></li>
+					<li><a href='#'>Call For Papers</a></li>
+					<li><a href='#'>Outreach</a></li>
+				</ul>
+			</li>
+			<li><a href='timeline'>Dates</a></li>
+			<li><a href='#'>Programme</a></li>
+			<li><a href='#'>Venue</a></li>
+			<li class='selected'><a href='info'>Conference Info</a>
+				<ul>
+					<li><a href='participants'>Participants</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="loader"></div>
+	<div class='main-content'>
+		<div class='title'>
+			Malta
+		</div>
+		<div class='info-section'>
+			<div class='info-text'>
+				<p><a href="http://www.visitmalta.com/main">MALTA</a>, <a href="http://www.visitmalta.com/gozo">Gozo</a> and <a href="http://www.visitmalta.com/comino">Comino</a>, the inhabited islands of the Maltese archipelago, lie at almost the exact geographical heart of the Mediterranean Sea. With Sicily some 95 kms to the North, Tripoli 350 kms to the South and Tunis 320 kms to the West, Malta is virtually at the crossroads between continents. The islands' strategic position has, in fact, made them subject to a succession of rulers, who in turn left their influence on the country and language as we know them today. Malta's pre-history dates back to 5000 B.C., whilst its documented past is traceable over a period of 2000 years. <br><br><br>In 1964 Malta obtained its political independence from Britain and in 1974 it became a Republic. Elections to the House of Representatives are held every five years. Malta is a member of the United Nations and its various organisations and ever since 1964 has taken an active role in United Nations affairs. In 1967 Malta launched the idea of seabed resources being the common heritage of mankind. Malta became a full member of the EU on 1 May, 2004. <br><br>The national language is Maltese which is a complex derivative of Semitic and Romance languages using a primarily Latin alphabet but also including a number of additional letters which originate in the Arab language. English is also an official language. The climate is typically Mediterranean, having mild winters and hot summers. Malta has a population of 400,000 and is visited annually by over a million tourists. Air Malta and other international airlines link Malta with the major European and North African cities. There are daily connections to London (Heathrow and Gatwick Airports) and Rome as well as frequent direct flights to Milan, Brussels, Paris, Frankfurt, Zurich, Athens, Tunis, Cairo, Tel Aviv and Dubai. A sophisticated telecommunications system, cardphone/internet booths and internet cafés, ensure easy international links. The capital city is Valletta commissioned by Grandmaster La Vallette after the Great Siege of 1565.
+				</p>
+			</div>
+			<div class='info-images'>
+				<div class="fotorama" data-allowfullscreen="true" data-width="100%" data-ratio="800/400">
+			      <img src="http://vassallohistory.files.wordpress.com/2013/09/valletta3.jpg">
+			      <img src="http://www.orlandtransport.com/media/images/photos/lavalletta.jpg">
+			      <img src="http://www.travelnewsdigest.in/wp-content/uploads/2013/09/malta.jpg">
+			      <img src="http://upload.wikimedia.org/wikipedia/commons/6/6a/Malta-senglea-57.jpg">
+			      <img src="http://www.century21.com.mt/images/background/fallback_backgrounds_image.jpg">
+    			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
